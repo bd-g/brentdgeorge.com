@@ -48,6 +48,10 @@ export default {
 
 
 <style scoped>
+* {
+  color: #C5C6C7;
+}
+
 .mint {
   color: #66FCF1;
 }

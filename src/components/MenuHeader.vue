@@ -5,6 +5,7 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <router-link class="nav-link bg-black" to="/">Home</router-link>
+        <router-link class="nav-link bg-black" to="/life-map">Life Map</router-link>
         <router-link class="nav-link bg-black" to="/github-info">Github Info</router-link>
       </b-navbar-nav>
     </b-collapse>
@@ -40,4 +41,10 @@ export default {
   color: black !important;
 }
 
+/* Mobile Styles */
+@media only screen and (max-width: 959px) {
+ .nav-link {
+   border: none;
+ }
+}
 </style>

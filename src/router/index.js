@@ -21,6 +21,11 @@ const routes = [
     component: Home
   },
   {
+    path: '/life-map',
+    name: 'LifeMap',
+    component: () => import(/* webpackChunkName: "about" */ '../views/LifeMap.vue')
+  },
+  {
     path: '/github-info',
     name: 'GitHubInfo',
     component: () => import(/* webpackChunkName: "about" */ '../views/GitHubInfo.vue')

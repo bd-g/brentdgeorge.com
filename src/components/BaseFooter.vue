@@ -7,9 +7,8 @@
         &nbsp;
         <a class="footer-link" href="https://www.github.com/bd-g/" target="_blank">GitHub</a>
       </li>
-      <li class = "info"><a class = "footer-link source-link" target="_blank"
-        href="https://github.com/bd-g/brent-d-george-website">
-        Click Here for Source Code</a>
+      <li class = "info source-link">
+        Connect with me!
       </li>
     </div>
     <hr class="footer-divide">
@@ -70,6 +69,7 @@ export default {
 
 .source-link {
   font-size: 70%;
+  color: #C5C6C7;
 }
 
 .footer-link:hover{
