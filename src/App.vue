@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <MenuHeader/>
-    <router-view class="bottom-buffer" />
+    <router-view/>
     <BaseFooter/>
   </div>
 </template>
@@ -39,10 +39,6 @@ export default {
 * {
 	margin: 0;
   padding: 0;
-}
-
-.bottom-buffer {
-  margin-bottom: 85px;
 }
 
 html {
