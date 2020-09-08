@@ -23,7 +23,7 @@
                   <td><img class="avatar-img" :src="repo.owner.avatar_url">{{repo.owner.login}}</td>
                   <td>
                     {{ repo.fork ? "Yes" : "No" }}
-                  </td>
+                  </td> 
                   <td>
                     {{ repo.archived ? "No" : "Yes" }}
                     <svg width='6' height='6'>
@@ -63,8 +63,8 @@ export default {
     async fetchGithubData(){
       try {
         this.isLoading = true;
-        const response = await axios.get("/api/github/repos");
-        this.githubRepos = response.data.repos;
+        const response = await axios.get("https://api.github.com/users/bd-g/repos");
+        this.githubRepos = response.data;
         this.isLoading = false;
       }
       catch (error) {

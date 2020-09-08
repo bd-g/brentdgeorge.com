@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <h1 class="mint light buffered">BRENT GEORGE</h1>
-    <h4 class="light-grey">BYU Computer Engineering / Navitaire Cloud Development</h4>
-    <div class="header-text">Computer engineering student. Engaged and self-driven professional who learns and adapts quickly. <br/> Currently working as a cloud solutions intern at Navitaire.
+    <h4 class="light-grey">BYU Computer Engineering / Select Bankcard Engineering Department</h4>
+    <div class="header-text">Computer engineering student. Engaged and self-driven professional who learns and adapts quickly. <br/> Currently working as a software developer at Select Bankcard in Lehi, Utah.
     </div>
     <div class="info-bar-wrapper">
       <div class="info-bar">
@@ -10,16 +10,18 @@
           <div class="info-bar-block">
             <h4 class="info-heading light-grey">Projects</h4>
             <ul class="box-bullet-seperated">
+              <li class = "box-text">Eliminated 1.5 hours of daily tasks with custom C#/SQL automation services<br/>Included Windows services, GUIs, and SQL stored procedures and schemas</li>
               <li class = "box-text">Developed automated workflow to generate, send out, and request signatures on Engagement Letters for Scalar LLC</li>
               <li class = "box-text">Researched capabilities of various distributed run-time applications for use in Azure Cloud for Event Streaming service handling millions of events per day</li>
-              <li class = "box-text">Built database to gather financial data to store and display in real-time</li>
+              <li class = "box-text">Created UWP Flashcard app with feature to automate creation of flashcards from student notes</li>
             </ul>
           </div>
           <div class="info-bar-block">
             <h4 class="info-heading light-grey">Experience</h4>
             <ul class="box-bullet-seperated">
-              <li class = "box-text">Navitaire, an Amadeus company - Cloud Solutions Intern<br/><em>October 2019 - Present</em></li>
-              <li class = "box-text">Utah Underwater Robotics - President Elect<br/><em>February 2019 - Present</em><br class="no-mobile"/><br/></li>
+              <li class = "box-text">Select Bankcard - Software Development Intern<br/><em>May 2020 - Present</em></li>
+              <li class = "box-text">Utah Underwater Robotics - Executive Director<br/><em>February 2019 - Present</em></li>
+              <li class = "box-text">Navitaire, an Amadeus company - Cloud Solutions Intern<br/><em>October 2019 - April 2020</em></li>
               <li class = "box-text">Scalar LLC - Software Development Intern<br/><em>January 2019 - October 2019</em></li>
             </ul>
           </div>
