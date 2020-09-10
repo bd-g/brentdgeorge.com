@@ -9,7 +9,7 @@
             <p>We've all heard the saying "don't judge a book by it's cover". Well, I encourage you to read my resume,
               but also to reach out and get to know me! I think you'll learn a lot more about both my experience as well
               as my character, and I'd love to make a new friend. Reach out on LinkedIn or by email, both listed on my resume.</p>
-            <button type="submit" class="resume-download" onclick="window.open('./Brent_George_Resume_2020_07_31.pdf')">
+            <button type="submit" class="resume-download" onclick="window.open('./Brent_George_Resume_2020_09_09.pdf')">
                 Download <i class="fa fa-file-pdf-o" style="font-size:20px;color:red"></i>
             </button>
           </div>
