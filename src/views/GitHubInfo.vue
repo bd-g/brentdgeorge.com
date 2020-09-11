@@ -73,7 +73,7 @@ export default {
         }
       }
 
-      return this.githubRepos.sort(compareRepos);
+      return this.githubRepos.slice(0).sort(compareRepos);
     },
   },
   methods: {
@@ -86,7 +86,7 @@ export default {
         this.isLoading = false;
       }
       catch (error) {
-          console.log("--- Error loading repo data --- \n" + error);
+        console.log("--- Error loading repo data --- \n" + error);
       }
     },
   },
