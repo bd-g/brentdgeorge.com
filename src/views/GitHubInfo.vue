@@ -17,7 +17,7 @@
                   <th>Main Language</th>
                   <th>Issues</th>
                 </tr>
-                <tr v-for="repo in githubRepos" :key="repo.id">
+                <tr v-for="repo in orderedRepos" :key="repo.id">
                   <td><a class="black-link" :href="repo.html_url">{{repo.name}}</a></td>
                   <td class="twentyFiveWidth">{{repo.description ? repo.description : "-"}}</td>
                   <td><img class="avatar-img" :src="repo.owner.avatar_url">{{repo.owner.login}}</td>
@@ -52,12 +52,29 @@ export default {
   name: 'GitHubInfo',
   data() {
     return {
-      githubRepos: Object,
+      githubRepos: Array,
       isLoading: false
     }
   },
   created() {
     this.fetchGithubData();
+  },
+  computed: {
+    orderedRepos: function(){
+      function compareRepos(a, b) {
+        if (a.archived && !b.archived) {
+          return 1;
+        } else if (!a.archived && b.archived) {
+          return -1;
+        } else if (a.size > b.size) {
+          return -1;
+        } else {
+          return 0;
+        }
+      }
+
+      return this.githubRepos.sort(compareRepos);
+    },
   },
   methods: {
     async fetchGithubData(){
@@ -65,6 +82,7 @@ export default {
         this.isLoading = true;
         const response = await axios.get("https://api.github.com/users/bd-g/repos");
         this.githubRepos = response.data;
+        
         this.isLoading = false;
       }
       catch (error) {
